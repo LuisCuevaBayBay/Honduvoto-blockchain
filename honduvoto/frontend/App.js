@@ -1,75 +1,92 @@
 import 'regenerator-runtime/runtime';
 import React from 'react';
 
-import './assets/global.css';
+//react bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+//import bootstrap navbar
+
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Card, Button, Row} from'react-bootstrap';
+
+
+//react router
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom";
+
+//Custom Components 
+import Home from "./Components/Home";
+import NewPoll  from './Components/NewPoll';
+import PollingStation from './Components/PollingStation';
+
 
 import { EducationalText, SignInPrompt, SignOutButton } from './ui-components';
 
 
 export default function App({ isSignedIn, contractId, wallet }) {
-  const [valueFromBlockchain, setValueFromBlockchain] = React.useState();
+  
+  const signInFun=()=> {
+    wallet.signIn();
+  }
+  const signOutFun=()=>{
+    wallet.signOut();
+  }
 
-  const [uiPleaseWait, setUiPleaseWait] = React.useState(true);
-
-  // Get blockchian state once on component load
-  React.useEffect(() => {
-    getGreeting()
-      .then(setValueFromBlockchain)
-      .catch(alert)
-      .finally(() => {
-        setUiPleaseWait(false);
-      });
+  const displayHome=()=>{
+    if(isSignedIn){
+      return(
+        <Routes>
+            <Route path="/" element={<Home/> }></Route>
+            <Route path="/newPoll" element={ <NewPoll/>}></Route>
+            <Route path="/PollingStation" element={< PollingStation/> }></Route>
+        </Routes>
+      )
+    } else { 
+      return(
+      <Container>
+          <Row classname='justify-content-center d-flex'>
+              <Card style= {{margintop:"5vh", width: "30vh" }}>
+                <Container>
+                  <Row> Sign in to vote!</Row>
+                  <Row classname='justify-content-center d-flex'>
+                    <Button onClick={signInFun}>Login</Button>
+                  </Row>
+                </Container>
+                </Card>
+          </Row>
+      </Container>
+      );
     }
-  , []);
-
-  /// If user not signed-in with wallet - show prompt
-  if (!isSignedIn) {
-    // Sign-in flow will reload the page later
-    return <SignInPrompt greeting={valueFromBlockchain} onClick={() => wallet.signIn()}/>;
-  }
-
-  function changeGreeting(e) {
-    e.preventDefault();
-    setUiPleaseWait(true);
-    const { greetingInput } = e.target.elements;
     
-    // use the wallet to send the greeting to the contract
-    wallet.callMethod({ method: 'set_greeting', args: { message: greetingInput.value }, contractId })
-      .then(async () => {return getGreeting();})
-      .then(setValueFromBlockchain)
-      .finally(() => {
-        setUiPleaseWait(false);
-      });
-  }
-
-  function getGreeting(){
-    // use the wallet to query the contract's greeting
-    return wallet.viewMethod({ method: 'get_greeting', contractId })
-  }
-
-  return (
-    <>
-      <SignOutButton accountId={wallet.accountId} onClick={() => wallet.signOut()}/>
-      <main className={uiPleaseWait ? 'please-wait' : ''}>
-        <h1>
-          The contract says: <span className="greeting">{valueFromBlockchain}</span>
-        </h1>
-        <form onSubmit={changeGreeting} className="change">
-          <label>Change greeting:</label>
-          <div>
-            <input
-              autoComplete="off"
-              defaultValue={valueFromBlockchain}
-              id="greetingInput"
-            />
-            <button>
-              <span>Save</span>
-              <div className="loader"></div>
-            </button>
-          </div>
-        </form>
-        <EducationalText/>
-      </main>
-    </>
+  };
+  
+  return(
+  <Router>
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">Honduvoto</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+          </Nav>
+          <Nav>
+            <Nav.Link href="#newpoll">New Elections</Nav.Link>
+            <Nav.Link onClick={isSignedIn? signOutFun: signInFun}>
+              {isSignedIn ? wallet.accountId: "Login"}
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    {displayHome()}
+  </Router>
   );
 }

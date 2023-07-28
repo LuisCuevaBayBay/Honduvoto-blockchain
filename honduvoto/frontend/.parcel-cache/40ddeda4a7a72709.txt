@@ -1,4 +1,4 @@
-14653
+14655
 59/home/luisc/Documents/votando/honduvoto/frontend/index.html1690533615218876434 0
 57/home/luisc/Documents/votando/honduvoto/frontend/index.js1690533615218876434 0
 65/home/luisc/Documents/votando/honduvoto/frontend/ui-components.js1690533615242873117 0
@@ -6,10 +6,11 @@
 67/home/luisc/Documents/votando/honduvoto/frontend/assets/favicon.ico1690533615278868141 0
 55/home/luisc/Documents/votando/honduvoto/frontend/assets1690533615242873117 1
 77/home/luisc/Documents/votando/honduvoto/frontend/dist/logo-white.a7716062.svg1690536247747230034 0
-74/home/luisc/Documents/votando/honduvoto/frontend/dist/favicon.eee7a1e8.ico1690536242419523151 0
+72/home/luisc/Documents/votando/honduvoto/frontend/dist/index.471187ca.css1690545167051243299 0
+74/home/luisc/Documents/votando/honduvoto/frontend/dist/favicon.eee7a1e8.ico1690545167007244935 0
 61/home/luisc/Documents/votando/honduvoto/frontend/package.json1690533615242873117 0
 76/home/luisc/Documents/votando/honduvoto/frontend/dist/index.bc0daea6.css.map1690536252074991303 0
-53/home/luisc/Documents/votando/honduvoto/frontend/dist1690536262482414919 1
+53/home/luisc/Documents/votando/honduvoto/frontend/dist1690545168883175216 1
 93/home/luisc/Documents/votando/honduvoto/frontend/node_modules/to-fast-properties/package.json1690533757077889270 0
 90/home/luisc/Documents/votando/honduvoto/frontend/node_modules/to-fast-properties/readme.md1690533758413682559 0
 80/home/luisc/Documents/votando/honduvoto/frontend/node_modules/to-fast-properties1690533757917759318 1
@@ -1806,6 +1807,7 @@
 112/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/esm5/internal/operators/publishReplay.js1690533775123087796 0
 108/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/esm5/internal/operators/switchAll.js1690533775898966922 0
 109/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/esm5/internal/operators/reduce.js.map1690533778718527385 0
+76/home/luisc/Documents/votando/honduvoto/frontend/dist/index.471187ca.css.map1690545167071242556 0
 105/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/esm5/internal/operators/expand.js1690533772067563492 0
 110/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/esm5/internal/operators/exhaust.js.map1690533777370737541 0
 110/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/esm5/internal/operators/windowCount.js1690533776238913948 0
@@ -6038,10 +6040,10 @@
 99/home/luisc/Documents/votando/honduvoto/frontend/node_modules/typescript/lib/lib.es2019.symbol.d.ts1690533780130307146 0
 92/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@swc/helpers/esm/_construct.js1690533768640096461 0
 112/home/luisc/Documents/votando/honduvoto/frontend/node_modules/css-select/node_modules/entities/lib/decode.js.map1690533764916674689 0
-64/home/luisc/Documents/votando/honduvoto/frontend/dist/index.html1690536252062991966 0
+64/home/luisc/Documents/votando/honduvoto/frontend/dist/index.html1690545168507189190 0
 75/home/luisc/Documents/votando/honduvoto/frontend/node_modules/yn/lenient.js1690533758221712274 0
 93/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@parcel/optimizer-image/LICENSE1690533756981904120 0
-75/home/luisc/Documents/votando/honduvoto/frontend/dist/index.3d214d75.js.map1690536261406474653 0
+75/home/luisc/Documents/votando/honduvoto/frontend/dist/index.3d214d75.js.map1690545168695182203 0
 99/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@swc/helpers/esm/_class_call_check.js1690533767676246220 0
 79/home/luisc/Documents/votando/honduvoto/frontend/node_modules/csso/node_modules1690533729170180018 1
 113/home/luisc/Documents/votando/honduvoto/frontend/node_modules/caniuse-lite/data/features/css-text-wrap-balance.js1690533771023725882 0
@@ -8487,7 +8489,7 @@
 76/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@lezer/lr/dist1690533761221247744 1
 84/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@parcel/runtime-js/src1690533764740701993 1
 93/home/luisc/Documents/votando/honduvoto/frontend/node_modules/caniuse-lite/data/regions/UY.js1690533775986953214 0
-75/home/luisc/Documents/votando/honduvoto/frontend/dist/fetch.5aa4d3e3.js.map1690536255354810001 0
+75/home/luisc/Documents/votando/honduvoto/frontend/dist/fetch.5aa4d3e3.js.map1690545168543187852 0
 116/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/types/internal/scheduler/AsyncScheduler.d.ts1690533780070316509 0
 113/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/types/internal/operators/toArray.d.ts.map1690533779766363930 0
 91/home/luisc/Documents/votando/honduvoto/frontend/node_modules/css-tree/lib/parser/create.js1690533769771920538 0
@@ -8552,7 +8554,7 @@
 105/home/luisc/Documents/votando/honduvoto/frontend/node_modules/ajv/dist/vocabularies/dynamic/dynamicRef.js1690533764348762806 0
 99/home/luisc/Documents/votando/honduvoto/frontend/node_modules/typescript/lib/lib.es2019.string.d.ts1690533780130307146 0
 81/home/luisc/Documents/votando/honduvoto/frontend/node_modules/css-tree/cjs/syntax1690533767128331331 1
-71/home/luisc/Documents/votando/honduvoto/frontend/dist/index.3d214d75.js1690536255202818410 0
+71/home/luisc/Documents/votando/honduvoto/frontend/dist/index.3d214d75.js1690545168511189041 0
 98/home/luisc/Documents/votando/honduvoto/frontend/node_modules/caniuse-lite/data/features/path2d.js1690533775171080320 0
 78/home/luisc/Documents/votando/honduvoto/frontend/node_modules/js-yaml/index.js1690533761377223572 0
 90/home/luisc/Documents/votando/honduvoto/frontend/node_modules/typescript/lib/typescript.js1690533778666535492 0
@@ -9740,7 +9742,7 @@
 101/home/luisc/Documents/votando/honduvoto/frontend/node_modules/caniuse-lite/data/features/es6-class.js1690533772399511834 0
 108/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@babel/types/lib/converters/toStatement.js.map1690533768284151773 0
 98/home/luisc/Documents/votando/honduvoto/frontend/node_modules/resolve/test/resolver/other_path/lib1690533768176168553 1
-71/home/luisc/Documents/votando/honduvoto/frontend/dist/fetch.5aa4d3e3.js1690536255218817524 0
+71/home/luisc/Documents/votando/honduvoto/frontend/dist/fetch.5aa4d3e3.js1690545168511189041 0
 125/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/lib/svgo/config.js1690533762765008450 0
 120/home/luisc/Documents/votando/honduvoto/frontend/node_modules/css-select/node_modules/domutils/lib/manipulation.d.ts.map1690533764376758462 0
 122/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@parcel/optimizer-svgo/node_modules/svgo/lib/svgo/jsAPI.d.ts1690533768264154880 0
@@ -10105,7 +10107,7 @@
 114/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@babel/plugin-transform-regenerator/lib/index.js.map1690533758689639843 0
 75/home/luisc/Documents/votando/honduvoto/frontend/node_modules/rxjs/dist/cjs1690533777830665839 1
 80/home/luisc/Documents/votando/honduvoto/frontend/node_modules/call-bind/index.js1690533759401529623 0
-55/home/luisc/Documents/votando/honduvoto/frontend/App.js1690533615218876434 0
+55/home/luisc/Documents/votando/honduvoto/frontend/App.js1690545163315382132 0
 84/home/luisc/Documents/votando/honduvoto/frontend/node_modules/call-bind/package.json1690533759941446015 0
 112/home/luisc/Documents/votando/honduvoto/frontend/node_modules/@parcel/markdown-ansi/node_modules/chalk/readme.md1690533759761473885 0
 78/home/luisc/Documents/votando/honduvoto/frontend/node_modules/call-bind/.nycrc1690533757729788403 0
