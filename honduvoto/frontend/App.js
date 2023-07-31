@@ -78,7 +78,7 @@ export default function App({ isSignedIn, contractId, wallet }) {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Nav.Link href="#newpoll">New Elections</Nav.Link>
+            <Nav.Link disabled={!isSignedIn} href="#newpoll">New Elections</Nav.Link>
             <Nav.Link onClick={isSignedIn? signOutFun: signInFun}>
               {isSignedIn ? wallet.accountId: "Login"}
             </Nav.Link>
