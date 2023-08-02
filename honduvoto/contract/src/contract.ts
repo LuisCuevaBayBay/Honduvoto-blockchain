@@ -99,7 +99,7 @@ class VotingContract {
   }
 
   @view({})
-  getAllPrompt():string[]{
+  getAllPrompts():string[]{
     return this.promptSet.toArray();
   }
 

@@ -1425,7 +1425,7 @@ let VotingContract = (_dec = NearBindgen({}), _dec2 = call({}), _dec3 = call({})
   }) {
     return this.userParticiptaion.get(prompt);
   }
-  getAllPrompt() {
+  getAllPrompts() {
     return this.promptSet.toArray();
   }
   getVotes({
@@ -1448,7 +1448,7 @@ let VotingContract = (_dec = NearBindgen({}), _dec2 = call({}), _dec3 = call({})
   //near.log(`Saving greeting ${message}`);
   //this.message = message;
   //}
-}, (_applyDecoratedDescriptor(_class2.prototype, "addCandidatePair", [_dec2], Object.getOwnPropertyDescriptor(_class2.prototype, "addCandidatePair"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "initializeVotes", [_dec3], Object.getOwnPropertyDescriptor(_class2.prototype, "initializeVotes"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "addToPromptArray", [_dec4], Object.getOwnPropertyDescriptor(_class2.prototype, "addToPromptArray"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "clearPromptArray", [_dec5], Object.getOwnPropertyDescriptor(_class2.prototype, "clearPromptArray"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "addVote", [_dec6], Object.getOwnPropertyDescriptor(_class2.prototype, "addVote"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "recordUser", [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, "recordUser"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getUrl", [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, "getUrl"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "didParticipate", [_dec9], Object.getOwnPropertyDescriptor(_class2.prototype, "didParticipate"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "participaationArray", [_dec10], Object.getOwnPropertyDescriptor(_class2.prototype, "participaationArray"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getAllPrompt", [_dec11], Object.getOwnPropertyDescriptor(_class2.prototype, "getAllPrompt"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getVotes", [_dec12], Object.getOwnPropertyDescriptor(_class2.prototype, "getVotes"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getCandidatePair", [_dec13], Object.getOwnPropertyDescriptor(_class2.prototype, "getCandidatePair"), _class2.prototype)), _class2)) || _class);
+}, (_applyDecoratedDescriptor(_class2.prototype, "addCandidatePair", [_dec2], Object.getOwnPropertyDescriptor(_class2.prototype, "addCandidatePair"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "initializeVotes", [_dec3], Object.getOwnPropertyDescriptor(_class2.prototype, "initializeVotes"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "addToPromptArray", [_dec4], Object.getOwnPropertyDescriptor(_class2.prototype, "addToPromptArray"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "clearPromptArray", [_dec5], Object.getOwnPropertyDescriptor(_class2.prototype, "clearPromptArray"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "addVote", [_dec6], Object.getOwnPropertyDescriptor(_class2.prototype, "addVote"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "recordUser", [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, "recordUser"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getUrl", [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, "getUrl"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "didParticipate", [_dec9], Object.getOwnPropertyDescriptor(_class2.prototype, "didParticipate"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "participaationArray", [_dec10], Object.getOwnPropertyDescriptor(_class2.prototype, "participaationArray"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getAllPrompts", [_dec11], Object.getOwnPropertyDescriptor(_class2.prototype, "getAllPrompts"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getVotes", [_dec12], Object.getOwnPropertyDescriptor(_class2.prototype, "getVotes"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getCandidatePair", [_dec13], Object.getOwnPropertyDescriptor(_class2.prototype, "getCandidatePair"), _class2.prototype)), _class2)) || _class);
 function getCandidatePair() {
   const _state = VotingContract._getState();
   if (!_state && VotingContract._requireInit()) {
@@ -1475,7 +1475,7 @@ function getVotes() {
   const _result = _contract.getVotes(_args);
   if (_result !== undefined) if (_result && _result.constructor && _result.constructor.name === "NearPromise") _result.onReturn();else env.value_return(VotingContract._serialize(_result, true));
 }
-function getAllPrompt() {
+function getAllPrompts() {
   const _state = VotingContract._getState();
   if (!_state && VotingContract._requireInit()) {
     throw new Error("Contract must be initialized");
@@ -1485,7 +1485,7 @@ function getAllPrompt() {
     VotingContract._reconstruct(_contract, _state);
   }
   const _args = VotingContract._getArgs();
-  const _result = _contract.getAllPrompt(_args);
+  const _result = _contract.getAllPrompts(_args);
   if (_result !== undefined) if (_result && _result.constructor && _result.constructor.name === "NearPromise") _result.onReturn();else env.value_return(VotingContract._serialize(_result, true));
 }
 function participaationArray() {
@@ -1612,5 +1612,5 @@ function addCandidatePair() {
   if (_result !== undefined) if (_result && _result.constructor && _result.constructor.name === "NearPromise") _result.onReturn();else env.value_return(VotingContract._serialize(_result, true));
 }
 
-export { addCandidatePair, addToPromptArray, addVote, clearPromptArray, didParticipate, getAllPrompt, getCandidatePair, getUrl, getVotes, initializeVotes, participaationArray, recordUser };
+export { addCandidatePair, addToPromptArray, addVote, clearPromptArray, didParticipate, getAllPrompts, getCandidatePair, getUrl, getVotes, initializeVotes, participaationArray, recordUser };
 //# sourceMappingURL=hello_near.js.map
